@@ -4,9 +4,9 @@ pipeline {
   terraform 'myTerraform'
 }
   stages{
-    stage('Terraform Init'){
+    stage('Terraform Init '){
       steps {
-                sh 'terraform init'
+                sh 'terraform init -upgrade'
       }
     }
      stage('Terraform plan'){
