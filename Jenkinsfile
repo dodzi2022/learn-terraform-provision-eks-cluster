@@ -6,17 +6,22 @@ pipeline {
   stages{
     stage('Terraform Init '){
       steps {
-                sh 'terraform init -upgrade'
+               // sh 'terraform init -upgrade'
       }
     }
      stage('Terraform plan'){
       steps {
-                sh 'terraform plan'
+               // sh 'terraform plan'
       }
     }
      stage('Terraform apply'){
       steps {
-                sh 'terraform apply --auto-approve'
+               // sh 'terraform apply --auto-approve'
+      }
+    }
+         stage('Terraform destroy'){
+      steps {
+                sh 'terraform destroy'
       }
     }
    } 
