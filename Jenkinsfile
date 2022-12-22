@@ -11,13 +11,13 @@ pipeline {
              
       }
     }
-     stage('Terraform plan'){
+   /*  stage('Terraform plan'){
       steps {
               sh 'terraform plan'
               
              
       }
-    }
+    } */
      /* stage('Terraform apply'){
       steps {
            //   sh 'terraform apply --auto-approve'
