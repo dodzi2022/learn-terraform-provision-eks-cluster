@@ -20,14 +20,14 @@ pipeline {
     }
      stage('Terraform apply'){
       steps {
-              sh 'terraform apply --auto-approve'
+           //   sh 'terraform apply --auto-approve'
            
              
       }
     }
        /*  stage('Terraform destroy'){
       steps {
-               // sh 'terraform destroy --auto-approve'
+                sh 'terraform destroy --auto-approve'
      }
      } 
      */
